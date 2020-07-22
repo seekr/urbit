@@ -73,7 +73,13 @@
         [%x %keys ~]         ``noun+!>(~(key by permissions))
         [%x %permission *]
       ?~  t.t.path  ~
-      ``noun+!>((~(get by permissions) t.t.path))
+      :-  ~
+      :-  ~
+      :-  %noun
+      !>
+      ^-  (unit permission)
+      (~(get by permissions) t.t.path)
+    ::
     ::
         [%x %permitted @ *]
       ?~  t.t.t.path  ~
